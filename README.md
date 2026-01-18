@@ -27,20 +27,21 @@
  npm or pnpm
 
 ### Installation
-1. Clone the repository:
-   ```bash
-   git clone [https://github.com/Ram-git123/krack-chat.git](https://github.com/Ram-git123/krack-chat.git)
    
-2. Navigate to the project folder:
-   cd krack-chat
+   1. Clone the repository:
    
-3.Install dependencies:
-  npm install
+      git clone [https://github.com/Ram-git123/krack-chat.git](https://github.com/Ram-git123/krack-chat.git)
+
+   2. Navigate to the project folder:
+      cd krack-chat
+
+   3.Install dependencies:
+     npm install
   
-4.Configuration
-Create a .env file in the root directory and add your Supabase credentials:
-  VITE_SUPABASE_URL=your_supabase_project_url
-  VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-  
-5.Running Locally
-   npm run dev
+   4.Configuration
+     Create a .env file in the root directory and add your Supabase credentials:
+     VITE_SUPABASE_URL=your_supabase_project_url
+     VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+     
+   5.Running Locally
+     npm run dev
