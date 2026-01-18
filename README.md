@@ -16,13 +16,17 @@
 
 ## 🚀 Tech Stack
  **Frontend:** React + TypeScript + Vite
+ 
  **Styling:** Tailwind CSS + Framer Motion (animations)
+ 
  **Database/Backend:** Supabase (Realtime, Auth, Storage)
+ 
  **Components:** Shadcn UI + Lucide React (icons)
 
 ## 🛠️ Getting Started
 
 ### Prerequisites
+
  Node.js (v18 or higher)
  npm or pnpm
 
@@ -31,17 +35,21 @@
    1. Clone the repository:
    
       git clone [https://github.com/Ram-git123/CHAT-APPLICATION-KRACK-CHAT-.git](https://github.com/Ram-git123/CHAT-APPLICATION-KRACK-CHAT-.git)
-
-   2. Navigate to the project folder:
+      
+   3. Navigate to the project folder:
+      
       cd krack-chat
-
+      
    3.Install dependencies:
-     npm install
-  
+   
+      npm install
+      
    4.Configuration
-     Create a .env file in the root directory and add your Supabase credentials:
-     VITE_SUPABASE_URL=your_supabase_project_url
-     VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
-     
+   
+      Create a .env file in the root directory and add your Supabase credentials:
+      VITE_SUPABASE_URL=your_supabase_project_url
+      VITE_SUPABASE_ANON_KEY=your_supabase_anon_key
+      
    5.Running Locally
+     
      npm run dev
