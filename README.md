@@ -30,7 +30,7 @@
    
    1. Clone the repository:
    
-      git clone [https://github.com/Ram-git123/krack-chat.git](https://github.com/Ram-git123/krack-chat.git)
+      git clone [https://github.com/Ram-git123/CHAT-APPLICATION-KRACK-CHAT-.git](https://github.com/Ram-git123/CHAT-APPLICATION-KRACK-CHAT-.git)
 
    2. Navigate to the project folder:
       cd krack-chat
