@@ -1,0 +1,187 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Fredoka:wght@400;500;600;700&family=Space+Grotesk:wght@400;500;600;700&display=swap');
+
+@layer base {
+  :root {
+    /* Krack Chat Dark Theme - Biscuit meets Lightning */
+    --background: 20 15% 8%;
+    --foreground: 40 30% 95%;
+
+    --card: 20 12% 12%;
+    --card-foreground: 40 30% 95%;
+
+    --popover: 20 12% 10%;
+    --popover-foreground: 40 30% 95%;
+
+    /* Golden Biscuit Primary */
+    --primary: 35 75% 55%;
+    --primary-foreground: 20 15% 8%;
+
+    /* Electric Blue Secondary */
+    --secondary: 200 95% 55%;
+    --secondary-foreground: 20 15% 8%;
+
+    --muted: 20 10% 18%;
+    --muted-foreground: 35 20% 60%;
+
+    /* Accent - Electric Blue Glow */
+    --accent: 200 95% 55%;
+    --accent-foreground: 20 15% 8%;
+
+    --destructive: 0 70% 50%;
+    --destructive-foreground: 40 30% 95%;
+
+    --border: 20 15% 22%;
+    --input: 20 12% 16%;
+    --ring: 200 95% 55%;
+
+    --radius: 0.75rem;
+
+    /* Custom Krack Chat tokens */
+    --biscuit: 35 75% 55%;
+    --biscuit-light: 38 80% 65%;
+    --biscuit-dark: 32 70% 40%;
+    --lightning: 200 95% 55%;
+    --lightning-glow: 200 100% 70%;
+    --crumb: 35 60% 75%;
+
+    /* Gradients */
+    --gradient-biscuit: linear-gradient(135deg, hsl(35, 75%, 55%), hsl(38, 80%, 65%));
+    --gradient-lightning: linear-gradient(135deg, hsl(200, 95%, 55%), hsl(210, 100%, 70%));
+    --gradient-dark: linear-gradient(180deg, hsl(20, 15%, 8%), hsl(20, 12%, 6%));
+
+    /* Shadows */
+    --shadow-biscuit: 0 4px 20px -4px hsl(35 75% 55% / 0.4);
+    --shadow-lightning: 0 4px 30px -4px hsl(200 95% 55% / 0.5);
+    --shadow-card: 0 8px 32px -8px hsl(0 0% 0% / 0.5);
+
+    --sidebar-background: 20 12% 10%;
+    --sidebar-foreground: 40 30% 95%;
+    --sidebar-primary: 35 75% 55%;
+    --sidebar-primary-foreground: 20 15% 8%;
+    --sidebar-accent: 20 10% 16%;
+    --sidebar-accent-foreground: 40 30% 95%;
+    --sidebar-border: 20 15% 18%;
+    --sidebar-ring: 200 95% 55%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground font-body antialiased;
+    font-feature-settings: "rlig" 1, "calt" 1;
+  }
+}
+
+@layer components {
+  /* Cracked Biscuit Bubble Styles */
+  .bubble-cracked {
+    border-radius: 18px 4px 20px 6px;
+    position: relative;
+  }
+
+  .bubble-cracked-alt {
+    border-radius: 4px 18px 6px 20px;
+  }
+
+  .bubble-own {
+    @apply bg-primary text-primary-foreground;
+    border-radius: 20px 6px 4px 18px;
+  }
+
+  .bubble-other {
+    @apply bg-muted text-foreground;
+    border-radius: 6px 20px 18px 4px;
+  }
+
+  /* Lightning Glow Effect */
+  .glow-lightning {
+    box-shadow: 0 0 20px hsl(var(--lightning) / 0.5),
+                0 0 40px hsl(var(--lightning) / 0.3),
+                0 0 60px hsl(var(--lightning) / 0.1);
+  }
+
+  .glow-biscuit {
+    box-shadow: 0 0 20px hsl(var(--biscuit) / 0.4),
+                0 0 40px hsl(var(--biscuit) / 0.2);
+  }
+
+  /* Crumb dots pattern */
+  .crumb-pattern {
+    background-image: radial-gradient(circle, hsl(var(--biscuit-dark)) 1px, transparent 1px);
+    background-size: 12px 12px;
+  }
+}
+
+@layer utilities {
+  .font-display {
+    font-family: 'Fredoka', sans-serif;
+  }
+
+  .font-body {
+    font-family: 'Space Grotesk', sans-serif;
+  }
+
+  .text-gradient-biscuit {
+    background: linear-gradient(135deg, hsl(35, 75%, 55%), hsl(38, 80%, 65%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .text-gradient-lightning {
+    background: linear-gradient(135deg, hsl(200, 95%, 55%), hsl(210, 100%, 70%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-clip: text;
+  }
+
+  .animate-crack {
+    animation: crack 0.3s ease-out;
+  }
+
+  @keyframes crack {
+    0% { transform: scale(0.95); opacity: 0; }
+    50% { transform: scale(1.02); }
+    100% { transform: scale(1); opacity: 1; }
+  }
+
+  @keyframes float {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-10px); }
+  }
+
+  .animate-float {
+    animation: float 3s ease-in-out infinite;
+  }
+
+  @keyframes pulse-glow {
+    0%, 100% { box-shadow: 0 0 20px hsl(200 95% 55% / 0.5); }
+    50% { box-shadow: 0 0 40px hsl(200 95% 55% / 0.8); }
+  }
+
+  .animate-pulse-glow {
+    animation: pulse-glow 2s ease-in-out infinite;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar {
+    width: 6px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-track {
+    background: hsl(var(--muted));
+    border-radius: 3px;
+  }
+
+  .scrollbar-thin::-webkit-scrollbar-thumb {
+    background: hsl(var(--biscuit));
+    border-radius: 3px;
+  }
+}
