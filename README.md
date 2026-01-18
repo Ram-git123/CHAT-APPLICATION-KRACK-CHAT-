@@ -53,3 +53,7 @@
    5.Running Locally
      
      npm run dev
+     
+   6.vercel publish 
+   
+     https://chat-application-krack-chat.vercel.app/
