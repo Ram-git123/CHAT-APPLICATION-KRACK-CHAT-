@@ -57,3 +57,9 @@
    6.vercel publish 
    
      https://chat-application-krack-chat.vercel.app/
+
+# DISPLAY
+
+<img width="750" height="640" alt="Screenshot 2026-01-21 164404" src="https://github.com/user-attachments/assets/6973e904-4110-420d-bfab-bcdae7b8faca" />
+<img width="750" height="640" alt="Screenshot 2026-01-21 164415" src="https://github.com/user-attachments/assets/33353cc2-ca10-436b-9c20-60b993b51761" />
+
